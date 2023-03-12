@@ -1,0 +1,37 @@
+<div class="container">
+    <hr>
+    <h1>Adicionar novo usuario</h1>
+    <hr>
+
+    <form action="http://localhost:3000/usuario" method="POST">
+        <div class="form-group">
+            <label for="CPF">CPF</label>
+            <input class="form-control" name="cpf" type="number">
+
+            <style> 
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+          
+                input[type=number] {
+                    -moz-appearance: textfield;
+                }
+            </style>         <!-- remove setas do type number -->
+            
+        </div>
+
+        <div class="form-group">
+            <label for="Nome">Nome</label>
+            <input class="form-control" name="nome">
+        </div>
+        <div class="form-group">
+            <label for="data_nascimento">Data de nascimento</label>
+            <input class="form-control" name="data_nascimento" type="date">
+        </div>
+
+
+        <button type="adicionar" class="btn btn-primary">Adicionar</button>
+    </form>
+</div>
